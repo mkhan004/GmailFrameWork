@@ -35,15 +35,5 @@ public class GmailInboxPage extends PageBase{
 	@FindBy(xpath = "//*[@id=':j0']")
 	public WebElement nextPageButton;
 	
-	@FindBy(xpath = "//*[@id=':5']/div[2]/div[1]/div/div[1]/div")
-	public WebElement backToInboxButton;
 	
-	@FindBy(className = "gD")
-	public WebElement emailSender;
-	
-	@FindBy(css = "span[class='adl']")
-	public WebElement totalEmailCountInEmailOpenPage;
-	
-	@FindBy(xpath = "//*[@id=':5']/div[2]/div[1]/div/div[2]/div[3]")
-	public WebElement emailDeleteButton;
 }

@@ -15,6 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.framework.pages.EmailViewPage;
 import com.framework.pages.GmailInboxPage;
 import com.framework.pages.GmailSentMailPage;
 import com.framework.pages.GmailSignInPage;
@@ -32,6 +33,7 @@ public class TestBase {
 	protected GmailSignInPage gmailSignInPage;
 	protected GmailInboxPage gmailInboxPage;
 	protected GmailSentMailPage gmailSentMailPage;
+	protected EmailViewPage emailViewPage;
 	
 	
 	@BeforeSuite
@@ -62,6 +64,7 @@ public class TestBase {
 		gmailSignInPage = PageFactory.initElements(driver, GmailSignInPage.class);
 		gmailInboxPage = PageFactory.initElements(driver, GmailInboxPage.class);
 		gmailSentMailPage = PageFactory.initElements(driver, GmailSentMailPage.class);
+		emailViewPage = PageFactory.initElements(driver, EmailViewPage.class);
 	}
 	// comment
 	@AfterSuite
