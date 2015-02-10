@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7730" started-at="2014-12-13T21:33:39Z" finished-at="2014-12-13T21:33:47Z">
+  <suite name="Default suite" duration-ms="10141" started-at="2015-02-10T19:44:49Z" finished-at="2015-02-10T19:44:59Z">
     <groups>
+      <group name="a">
+        <method signature="GmailInboxPageTest.testPromotionsEmailFolder()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="testPromotionsEmailFolder" class="com.framework.tests.GmailInboxPageTest"/>
+      </group> <!-- a -->
     </groups>
-    <test name="Default test" duration-ms="7730" started-at="2014-12-13T21:33:39Z" finished-at="2014-12-13T21:33:47Z">
-      <class name="com.framework.tests.GmailSentMailPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.framework.tests.GmailSentMailPageTest@142eda55]" name="setUp" is-config="true" duration-ms="7255" started-at="2014-12-13T16:33:32Z" finished-at="2014-12-13T16:33:39Z">
+    <test name="Default test" duration-ms="10141" started-at="2015-02-10T19:44:49Z" finished-at="2015-02-10T19:44:59Z">
+      <class name="com.framework.tests.GmailInboxPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="setUp" is-config="true" duration-ms="7109" started-at="2015-02-10T14:44:42Z" finished-at="2015-02-10T14:44:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSentMailPage()[pri:0, instance:com.framework.tests.GmailSentMailPageTest@142eda55]" name="testSentMailPage" duration-ms="7719" started-at="2014-12-13T16:33:39Z" finished-at="2014-12-13T16:33:47Z">
+        <test-method status="PASS" signature="testGmailInbox()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="testGmailInbox" duration-ms="7542" started-at="2015-02-10T14:44:49Z" finished-at="2015-02-10T14:44:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSentMailPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.framework.tests.GmailSentMailPageTest@142eda55]" name="tearDown" is-config="true" duration-ms="995" started-at="2014-12-13T16:33:47Z" finished-at="2014-12-13T16:33:48Z">
+        </test-method> <!-- testGmailInbox -->
+        <test-method status="PASS" signature="testPromotionsEmailFolder()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="testPromotionsEmailFolder" duration-ms="788" started-at="2015-02-10T14:44:56Z" depends-on-methods="com.framework.tests.GmailInboxPageTest.testGmailInbox" finished-at="2015-02-10T14:44:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPromotionsEmailFolder -->
+        <test-method status="PASS" signature="testDeleteEmail()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="testDeleteEmail" duration-ms="1792" started-at="2015-02-10T14:44:57Z" depends-on-methods="com.framework.tests.GmailInboxPageTest.testPromotionsEmailFolder" finished-at="2015-02-10T14:44:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteEmail -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="tearDown" is-config="true" duration-ms="509" started-at="2015-02-10T14:44:59Z" finished-at="2015-02-10T14:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.framework.tests.GmailSentMailPageTest -->
+      </class> <!-- com.framework.tests.GmailInboxPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

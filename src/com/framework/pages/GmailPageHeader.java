@@ -8,16 +8,16 @@ public class GmailPageHeader {
 	@FindBy(linkText = "Sign in")
 	public WebElement signInLink;
 	
-	@FindBy(xpath = "//*[@class='gb_f gb_h']")
+	@FindBy(xpath = "//*[@class='gb_g gb_i']")
 	public WebElement signedInUser;
 	
-	@FindBy(xpath = "//*[@class='gb_C gb_da gb_h']")
+	@FindBy(xpath = "//*[@class='gb_D gb_ea gb_i']")
 	public WebElement signedInUserProfile;
 	
-	@FindBy(xpath = "//*[@class='gb_2b gb_9b gb_X']")
+	@FindBy(xpath = "//*[@class='gb_5b gb_cc gb_Z']")
 	public WebElement signOutLink;
 	
-	@FindBy(xpath = "//*[@class='gb_f']")
+	@FindBy(xpath = "//*[@class='gb_g']")
 	public WebElement gmailLink;
 	
 	
