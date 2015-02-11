@@ -65,27 +65,5 @@ public class GmailInboxPageTest extends TestBase{
 		Assert.assertEquals(runningSumOfEmail, totalEmail);
 	}
 	
-	@Test(dependsOnMethods = "testPromotionsEmailFolder")
-	public void testOpeningRandomEmail(){
-		int emailCount = gmailInboxPage.getListOfWebElements(driver, "div[class='yW']").size();
-		Random rand = new Random();
-		int index = rand.nextInt(emailCount)+0;
-		String emailSender = gmailInboxPage.getListOfWebElements(driver, "div[class='yW']").get(index).getText();
-		gmailInboxPage.getListOfWebElements(driver, "div[class='yW']").get(index).click();
-		String emailSenderCheck = gmailInboxPage.emailSender.getText();
-		gmailInboxPage.backToInboxButton.click();
-		Assert.assertEquals(emailSenderCheck, emailSender);
-	}
 	
-	@Test(dependsOnMethods = "testPromotionsEmailFolder")
-	public void testDeleteEmail(){
-		int emailCount = gmailInboxPage.getListOfWebElements(driver, "div[class='yW']").size();
-		Random rand = new Random();
-		int index = rand.nextInt(emailCount)+0;
-		gmailInboxPage.getListOfWebElements(driver, "div[class='yW']").get(index).click();
-		int totalEmailCount = gmailInboxPage.convertStringToInteger(gmailInboxPage.totalEmailCountInEmailOpenPage.getText().substring(6))-1;
-		gmailInboxPage.emailDeleteButton.click();
-		int finalEmailCount = gmailInboxPage.convertStringToInteger(gmailInboxPage.totalEmailCount.getText());
-		Assert.assertEquals(totalEmailCount, finalEmailCount);
-	}
 }

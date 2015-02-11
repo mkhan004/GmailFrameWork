@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.framework.tests.GmailInboxPageTest">
+      <class name="com.framework.tests.EmailViewPageTest">
         <methods>
-          <include name="testPromotionsEmailFolder"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testGmailInbox"/>
           <include name="testDeleteEmail"/>
+          <include name="setUp"/>
+          <include name="testOpeningRandomEmail"/>
+          <include name="testGmailInbox"/>
+          <include name="tearDown"/>
+          <include name="testEmailReply"/>
         </methods>
-      </class> <!-- com.framework.tests.GmailInboxPageTest -->
+      </class> <!-- com.framework.tests.EmailViewPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

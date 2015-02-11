@@ -15,6 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.framework.pages.EmailComposePage;
 import com.framework.pages.EmailViewPage;
 import com.framework.pages.GmailInboxPage;
 import com.framework.pages.GmailSentMailPage;
@@ -34,6 +35,7 @@ public class TestBase {
 	protected GmailInboxPage gmailInboxPage;
 	protected GmailSentMailPage gmailSentMailPage;
 	protected EmailViewPage emailViewPage;
+	protected EmailComposePage emailComposePage;
 	
 	
 	@BeforeSuite
@@ -65,11 +67,12 @@ public class TestBase {
 		gmailInboxPage = PageFactory.initElements(driver, GmailInboxPage.class);
 		gmailSentMailPage = PageFactory.initElements(driver, GmailSentMailPage.class);
 		emailViewPage = PageFactory.initElements(driver, EmailViewPage.class);
+		emailComposePage = PageFactory.initElements(driver, EmailComposePage.class);
 	}
 	// comment
 	@AfterSuite
 	public void tearDown(){
-		gmailPageHeader.gmailSignOut();
-		driver.quit();
+		//gmailPageHeader.gmailSignOut();
+		//driver.quit();
 	}
 }

@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10141" started-at="2015-02-10T19:44:49Z" finished-at="2015-02-10T19:44:59Z">
+  <suite name="Default suite" duration-ms="32858" started-at="2015-02-11T00:33:33Z" finished-at="2015-02-11T00:34:06Z">
     <groups>
-      <group name="a">
-        <method signature="GmailInboxPageTest.testPromotionsEmailFolder()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="testPromotionsEmailFolder" class="com.framework.tests.GmailInboxPageTest"/>
-      </group> <!-- a -->
     </groups>
-    <test name="Default test" duration-ms="10141" started-at="2015-02-10T19:44:49Z" finished-at="2015-02-10T19:44:59Z">
-      <class name="com.framework.tests.GmailInboxPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="setUp" is-config="true" duration-ms="7109" started-at="2015-02-10T14:44:42Z" finished-at="2015-02-10T14:44:49Z">
+    <test name="Default test" duration-ms="32858" started-at="2015-02-11T00:33:33Z" finished-at="2015-02-11T00:34:06Z">
+      <class name="com.framework.tests.EmailViewPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.framework.tests.EmailViewPageTest@37f92637]" name="setUp" is-config="true" duration-ms="8492" started-at="2015-02-10T19:33:24Z" finished-at="2015-02-10T19:33:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGmailInbox()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="testGmailInbox" duration-ms="7542" started-at="2015-02-10T14:44:49Z" finished-at="2015-02-10T14:44:56Z">
+        <test-method status="PASS" signature="testGmailInbox()[pri:0, instance:com.framework.tests.EmailViewPageTest@37f92637]" name="testGmailInbox" duration-ms="18694" started-at="2015-02-10T19:33:33Z" finished-at="2015-02-10T19:33:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGmailInbox -->
-        <test-method status="PASS" signature="testPromotionsEmailFolder()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="testPromotionsEmailFolder" duration-ms="788" started-at="2015-02-10T14:44:56Z" depends-on-methods="com.framework.tests.GmailInboxPageTest.testGmailInbox" finished-at="2015-02-10T14:44:57Z">
+        <test-method status="PASS" signature="testOpeningRandomEmail()[pri:0, instance:com.framework.tests.EmailViewPageTest@37f92637]" name="testOpeningRandomEmail" duration-ms="2145" started-at="2015-02-10T19:33:51Z" depends-on-methods="com.framework.tests.EmailViewPageTest.testGmailInbox" finished-at="2015-02-10T19:33:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPromotionsEmailFolder -->
-        <test-method status="PASS" signature="testDeleteEmail()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="testDeleteEmail" duration-ms="1792" started-at="2015-02-10T14:44:57Z" depends-on-methods="com.framework.tests.GmailInboxPageTest.testPromotionsEmailFolder" finished-at="2015-02-10T14:44:59Z">
+        </test-method> <!-- testOpeningRandomEmail -->
+        <test-method status="PASS" signature="testDeleteEmail()[pri:0, instance:com.framework.tests.EmailViewPageTest@37f92637]" name="testDeleteEmail" duration-ms="3969" started-at="2015-02-10T19:33:54Z" depends-on-methods="com.framework.tests.EmailViewPageTest.testOpeningRandomEmail" finished-at="2015-02-10T19:33:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteEmail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.framework.tests.GmailInboxPageTest@52c93509]" name="tearDown" is-config="true" duration-ms="509" started-at="2015-02-10T14:44:59Z" finished-at="2015-02-10T14:44:59Z">
+        <test-method status="PASS" signature="testEmailReply()[pri:0, instance:com.framework.tests.EmailViewPageTest@37f92637]" name="testEmailReply" duration-ms="8031" started-at="2015-02-10T19:33:58Z" depends-on-methods="com.framework.tests.EmailViewPageTest.testDeleteEmail" finished-at="2015-02-10T19:34:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmailReply -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.framework.tests.EmailViewPageTest@37f92637]" name="tearDown" is-config="true" duration-ms="1" started-at="2015-02-10T19:34:06Z" finished-at="2015-02-10T19:34:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.framework.tests.GmailInboxPageTest -->
+      </class> <!-- com.framework.tests.EmailViewPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

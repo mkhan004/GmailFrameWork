@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,17 +101,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.framework.tests.GmailInboxPageTest" hash-for-method="testDeleteEmail">testDeleteEmail</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.framework.tests.EmailViewPageTest" hash-for-method="testDeleteEmail">testDeleteEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.framework.tests.GmailInboxPageTest" hash-for-method="testGmailInbox">testGmailInbox</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.framework.tests.EmailViewPageTest" hash-for-method="testEmailReply">testEmailReply</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.framework.tests.GmailInboxPageTest" hash-for-method="testPromotionsEmailFolder">testPromotionsEmailFolder</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.framework.tests.EmailViewPageTest" hash-for-method="testGmailInbox">testGmailInbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.framework.tests.EmailViewPageTest" hash-for-method="testOpeningRandomEmail">testOpeningRandomEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -129,7 +134,7 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.framework.tests.GmailInboxPageTest</span>
+              <span class="class-name">com.framework.tests.EmailViewPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -141,6 +146,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testEmailReply">
+                  </a> <!-- testEmailReply -->
+                  <span class="method-name">testEmailReply</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testGmailInbox">
                   </a> <!-- testGmailInbox -->
                   <span class="method-name">testGmailInbox</span>
@@ -148,9 +160,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testPromotionsEmailFolder">
-                  </a> <!-- testPromotionsEmailFolder -->
-                  <span class="method-name">testPromotionsEmailFolder</span>
+                  <a name="testOpeningRandomEmail">
+                  </a> <!-- testOpeningRandomEmail -->
+                  <span class="method-name">testOpeningRandomEmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -158,7 +170,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/yg/tfjk64bj4rs5_7k33lbtd0g40000gn/T/testng-eclipse-1856291290/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/yg/tfjk64bj4rs5_7k33lbtd0g40000gn/T/testng-eclipse--1623969867/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -167,13 +179,7 @@
 &lt;suite name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.framework.tests.GmailInboxPageTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testGmailInbox&quot;/&gt;
-          &lt;include name=&quot;testPromotionsEmailFolder&quot;/&gt;
-          &lt;include name=&quot;testDeleteEmail&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.framework.tests.GmailInboxPageTest --&gt;
+      &lt;class name=&quot;com.framework.tests.EmailViewPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -197,14 +203,6 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">a</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">testPromotionsEmailFolder</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -221,24 +219,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testGmailInbox')
-data.setCell(0, 2, 'com.framework.tests.GmailInboxPageTest')
-data.setCell(0, 3, 7542);
+data.setCell(0, 2, 'com.framework.tests.EmailViewPageTest')
+data.setCell(0, 3, 18694);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testDeleteEmail')
-data.setCell(1, 2, 'com.framework.tests.GmailInboxPageTest')
-data.setCell(1, 3, 1792);
+data.setCell(1, 1, 'testEmailReply')
+data.setCell(1, 2, 'com.framework.tests.EmailViewPageTest')
+data.setCell(1, 3, 8031);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testPromotionsEmailFolder')
-data.setCell(2, 2, 'com.framework.tests.GmailInboxPageTest')
-data.setCell(2, 3, 788);
+data.setCell(2, 1, 'testDeleteEmail')
+data.setCell(2, 2, 'com.framework.tests.EmailViewPageTest')
+data.setCell(2, 3, 3969);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testOpeningRandomEmail')
+data.setCell(3, 2, 'com.framework.tests.EmailViewPageTest')
+data.setCell(3, 3, 2145);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -253,24 +255,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.framework.tests.GmailInboxPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testPrimaryMailFolder</span>
-                <br/>
-                <span class="ignored-method-name">testOpeningRandomEmail</span>
-                <br/>
-                <span class="ignored-method-name">testSocialEmailFolder</span>
-                <br/>
-                <span class="ignored-method-name">testTotalNoOfEmail</span>
-                <br/>
-                <span class="ignored-method-name">testNoOfEmailPerPage</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -279,26 +266,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.framework.tests.GmailInboxPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.framework.tests.EmailViewPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">testGmailInbox</span>
-                <span class="method-start">7119 ms</span>
+                <span class="method-start">8503 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testPromotionsEmailFolder</span>
-                <span class="method-start">14667 ms</span>
+                <span class="method-name">testOpeningRandomEmail</span>
+                <span class="method-start">27200 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteEmail</span>
-                <span class="method-start">15457 ms</span>
+                <span class="method-start">29348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmailReply</span>
+                <span class="method-start">33319 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17274 ms</span>
+                <span class="method-start">41424 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
