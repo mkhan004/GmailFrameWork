@@ -18,6 +18,7 @@ import org.testng.annotations.BeforeSuite;
 import com.framework.pages.EmailComposePage;
 import com.framework.pages.EmailViewPage;
 import com.framework.pages.GmailInboxPage;
+import com.framework.pages.GmailPageSideBar;
 import com.framework.pages.GmailSentMailPage;
 import com.framework.pages.GmailSignInPage;
 import com.framework.pages.GmailPageHeader;
@@ -36,6 +37,7 @@ public class TestBase {
 	protected GmailSentMailPage gmailSentMailPage;
 	protected EmailViewPage emailViewPage;
 	protected EmailComposePage emailComposePage;
+	protected GmailPageSideBar gmailPageSideBar;
 	
 	
 	@BeforeSuite
@@ -68,6 +70,7 @@ public class TestBase {
 		gmailSentMailPage = PageFactory.initElements(driver, GmailSentMailPage.class);
 		emailViewPage = PageFactory.initElements(driver, EmailViewPage.class);
 		emailComposePage = PageFactory.initElements(driver, EmailComposePage.class);
+		gmailPageSideBar = PageFactory.initElements(driver, GmailPageSideBar.class);
 	}
 	// comment
 	@AfterSuite

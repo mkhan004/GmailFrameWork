@@ -19,5 +19,10 @@ public class EmailComposePage extends PageBase{
 	@FindBy(css = "div[class = 'Am Al editable LW-avf']")
 	public WebElement emailBodyTextArea;
 	
+	@FindBy(css = "div[class = 'T-I J-J5-Ji aoO T-I-atl L3']")
+	public WebElement emailSendButton;
+	
+	@FindBy(css = "div[class = 'vh']")
+	public WebElement cofirmationMessage;
 	
 }
