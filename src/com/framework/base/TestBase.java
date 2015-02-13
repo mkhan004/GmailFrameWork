@@ -75,7 +75,7 @@ public class TestBase {
 	// comment
 	@AfterSuite
 	public void tearDown(){
-		//gmailPageHeader.gmailSignOut();
-		//driver.quit();
+		gmailPageHeader.gmailSignOut();
+		driver.quit();
 	}
 }

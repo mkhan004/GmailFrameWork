@@ -39,12 +39,18 @@ public class PageBase {
 		return allElements;
 	}
 
-	public Iterator<String> getWindow(){
-		Iterator<String> window = null;
+	public String getWindowInSequence(){
+		String mainWindow = null;
 		if(driver.getWindowHandles().size()>1){
 			Set<String> windID = driver.getWindowHandles();
-			window = windID.iterator();
+			Iterator<String> window = windID.iterator();
+			mainWindow = window.next();
 		}
-		return window;
+		return mainWindow;
+	}
+	
+	public String[] getWordsListOfLineText(String string){
+		String[] wordList = string.split(" ");
+		return wordList;
 	}
 }

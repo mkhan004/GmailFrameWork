@@ -10,5 +10,6 @@ public class GmailPageSideBar extends PageBase{
 	@FindBy(css = "div[class = 'T-I J-J5-Ji T-I-KE L3']")
 	public WebElement emailComposeButton;
 	
-	
+	@FindBy(xpath = "//*[@id=':jf']/div/div[1]/span/a")
+	public WebElement sentMailLink;
 }
