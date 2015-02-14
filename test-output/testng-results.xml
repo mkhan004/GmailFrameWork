@@ -1,33 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="8" failed="3" total="13" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9394" started-at="2015-02-13T16:16:48Z" finished-at="2015-02-13T16:16:57Z">
+  <suite name="Suite1" duration-ms="13455" started-at="2015-02-14T03:03:19Z" finished-at="2015-02-14T03:03:33Z">
     <groups>
+      <group name="b">
+        <method signature="GmailInboxPageTest.testTotalNoOfEmail()[pri:0, instance:com.framework.tests.GmailInboxPageTest@8caa572]" name="testTotalNoOfEmail" class="com.framework.tests.GmailInboxPageTest"/>
+      </group> <!-- b -->
+      <group name="a">
+        <method signature="GmailInboxPageTest.testPrimaryMailFolder()[pri:0, instance:com.framework.tests.GmailInboxPageTest@8caa572]" name="testPrimaryMailFolder" class="com.framework.tests.GmailInboxPageTest"/>
+        <method signature="GmailInboxPageTest.testPromotionsEmailFolder()[pri:0, instance:com.framework.tests.GmailInboxPageTest@8caa572]" name="testPromotionsEmailFolder" class="com.framework.tests.GmailInboxPageTest"/>
+        <method signature="GmailInboxPageTest.testSocialEmailFolder()[pri:0, instance:com.framework.tests.GmailInboxPageTest@8caa572]" name="testSocialEmailFolder" class="com.framework.tests.GmailInboxPageTest"/>
+      </group> <!-- a -->
     </groups>
-    <test name="Default test" duration-ms="9394" started-at="2015-02-13T16:16:48Z" finished-at="2015-02-13T16:16:57Z">
-      <class name="com.framework.tests.GmailSentMailPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.framework.tests.GmailSentMailPageTest@3bd62ac4]" name="setUp" is-config="true" duration-ms="10315" started-at="2015-02-13T11:16:37Z" finished-at="2015-02-13T11:16:48Z">
+    <test name="Nopackage1" duration-ms="31" started-at="2015-02-14T03:03:19Z" finished-at="2015-02-14T03:03:19Z">
+      <class name="com.framework.tests.GmailInboxPageTest">
+        <test-method status="FAIL" signature="testGmailInbox()[pri:0, instance:com.framework.tests.GmailInboxPageTest@8caa572]" name="testGmailInbox" duration-ms="5" started-at="2015-02-13T22:03:19Z" finished-at="2015-02-13T22:03:19Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.framework.tests.GmailInboxPageTest.testGmailInbox(GmailInboxPageTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSentMailPage()[pri:0, instance:com.framework.tests.GmailSentMailPageTest@3bd62ac4]" name="testSentMailPage" duration-ms="6607" started-at="2015-02-13T11:16:48Z" finished-at="2015-02-13T11:16:54Z">
+        </test-method> <!-- testGmailInbox -->
+        <test-method status="SKIP" signature="testNoOfEmailPerPage()[pri:0, instance:com.framework.tests.GmailInboxPageTest@8caa572]" name="testNoOfEmailPerPage" duration-ms="0" started-at="2015-02-13T22:03:19Z" depends-on-methods="com.framework.tests.GmailInboxPageTest.testGmailInbox" finished-at="2015-02-13T22:03:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSentMailPage -->
-        <test-method status="PASS" signature="testSentMailLink()[pri:0, instance:com.framework.tests.GmailSentMailPageTest@3bd62ac4]" name="testSentMailLink" duration-ms="2714" started-at="2015-02-13T11:16:54Z" depends-on-methods="com.framework.tests.GmailSentMailPageTest.testSentMailPage" finished-at="2015-02-13T11:16:57Z">
+        </test-method> <!-- testNoOfEmailPerPage -->
+        <test-method status="SKIP" signature="testPrimaryMailFolder()[pri:0, instance:com.framework.tests.GmailInboxPageTest@8caa572]" name="testPrimaryMailFolder" duration-ms="1" started-at="2015-02-13T22:03:19Z" depends-on-methods="com.framework.tests.GmailInboxPageTest.testGmailInbox" finished-at="2015-02-13T22:03:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSentMailLink -->
-        <test-method status="PASS" signature="testTotalNoOfEmail()[pri:0, instance:com.framework.tests.GmailSentMailPageTest@3bd62ac4]" name="testTotalNoOfEmail" duration-ms="55" started-at="2015-02-13T11:16:57Z" depends-on-methods="com.framework.tests.GmailSentMailPageTest.testSentMailLink" finished-at="2015-02-13T11:16:57Z">
+        </test-method> <!-- testPrimaryMailFolder -->
+        <test-method status="SKIP" signature="testPromotionsEmailFolder()[pri:0, instance:com.framework.tests.GmailInboxPageTest@8caa572]" name="testPromotionsEmailFolder" duration-ms="1" started-at="2015-02-13T22:03:19Z" depends-on-methods="com.framework.tests.GmailInboxPageTest.testGmailInbox" finished-at="2015-02-13T22:03:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPromotionsEmailFolder -->
+        <test-method status="SKIP" signature="testSocialEmailFolder()[pri:0, instance:com.framework.tests.GmailInboxPageTest@8caa572]" name="testSocialEmailFolder" duration-ms="0" started-at="2015-02-13T22:03:19Z" depends-on-methods="com.framework.tests.GmailInboxPageTest.testGmailInbox" finished-at="2015-02-13T22:03:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSocialEmailFolder -->
+        <test-method status="SKIP" signature="testTotalNoOfEmail()[pri:0, instance:com.framework.tests.GmailInboxPageTest@8caa572]" name="testTotalNoOfEmail" duration-ms="1" started-at="2015-02-13T22:03:19Z" depends-on-methods="com.framework.tests.GmailInboxPageTest.testGmailInbox" finished-at="2015-02-13T22:03:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTotalNoOfEmail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.framework.tests.GmailSentMailPageTest@3bd62ac4]" name="tearDown" is-config="true" duration-ms="2425" started-at="2015-02-13T11:16:58Z" finished-at="2015-02-13T11:17:01Z">
+      </class> <!-- com.framework.tests.GmailInboxPageTest -->
+    </test> <!-- Nopackage1 -->
+    <test name="Nopackage2" duration-ms="17" started-at="2015-02-14T03:03:20Z" finished-at="2015-02-14T03:03:20Z">
+      <class name="com.framework.tests.EmailViewPageTest">
+        <test-method status="FAIL" signature="testGmailInbox()[pri:0, instance:com.framework.tests.EmailViewPageTest@5cc75d38]" name="testGmailInbox" duration-ms="1" started-at="2015-02-13T22:03:20Z" finished-at="2015-02-13T22:03:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.framework.tests.EmailViewPageTest.testGmailInbox(EmailViewPageTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGmailInbox -->
+        <test-method status="SKIP" signature="testOpeningRandomEmail()[pri:0, instance:com.framework.tests.EmailViewPageTest@5cc75d38]" name="testOpeningRandomEmail" duration-ms="1" started-at="2015-02-13T22:03:20Z" depends-on-methods="com.framework.tests.EmailViewPageTest.testGmailInbox" finished-at="2015-02-13T22:03:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpeningRandomEmail -->
+        <test-method status="SKIP" signature="testDeleteEmail()[pri:0, instance:com.framework.tests.EmailViewPageTest@5cc75d38]" name="testDeleteEmail" duration-ms="1" started-at="2015-02-13T22:03:20Z" depends-on-methods="com.framework.tests.EmailViewPageTest.testOpeningRandomEmail" finished-at="2015-02-13T22:03:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteEmail -->
+        <test-method status="SKIP" signature="testEmailReply()[pri:0, instance:com.framework.tests.EmailViewPageTest@5cc75d38]" name="testEmailReply" duration-ms="1" started-at="2015-02-13T22:03:20Z" depends-on-methods="com.framework.tests.EmailViewPageTest.testDeleteEmail" finished-at="2015-02-13T22:03:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmailReply -->
+      </class> <!-- com.framework.tests.EmailViewPageTest -->
+    </test> <!-- Nopackage2 -->
+    <test name="Nopackage3" duration-ms="13267" started-at="2015-02-14T03:03:20Z" finished-at="2015-02-14T03:03:33Z">
+      <class name="com.framework.tests.EmailComposePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.framework.tests.EmailComposePageTest@1c042510]" name="setUp" is-config="true" duration-ms="5254" started-at="2015-02-13T22:03:14Z" finished-at="2015-02-13T22:03:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGmailInbox()[pri:0, instance:com.framework.tests.EmailComposePageTest@1c042510]" name="testGmailInbox" duration-ms="8839" started-at="2015-02-13T22:03:20Z" finished-at="2015-02-13T22:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGmailInbox -->
+        <test-method status="PASS" signature="testNewEmailComposeLink()[pri:0, instance:com.framework.tests.EmailComposePageTest@1c042510]" name="testNewEmailComposeLink" duration-ms="681" started-at="2015-02-13T22:03:28Z" depends-on-methods="com.framework.tests.EmailComposePageTest.testGmailInbox" finished-at="2015-02-13T22:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNewEmailComposeLink -->
+        <test-method status="FAIL" signature="testSendNewMail()[pri:0, instance:com.framework.tests.EmailComposePageTest@1c042510]" name="testSendNewMail" duration-ms="3736" started-at="2015-02-13T22:03:29Z" depends-on-methods="com.framework.tests.EmailComposePageTest.testNewEmailComposeLink" finished-at="2015-02-13T22:03:33Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Your message has been sent. View message] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Your message has been sent. View message] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.framework.tests.EmailComposePageTest.testSendNewMail(EmailComposePageTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSendNewMail -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.framework.tests.EmailComposePageTest@1c042510]" name="tearDown" is-config="true" duration-ms="713" started-at="2015-02-13T22:03:33Z" finished-at="2015-02-13T22:03:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.framework.tests.GmailSentMailPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.framework.tests.EmailComposePageTest -->
+    </test> <!-- Nopackage3 -->
+  </suite> <!-- Suite1 -->
 </testng-results>

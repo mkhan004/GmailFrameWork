@@ -1,17 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite1]">
+  <test name="Nopackage1(failed)">
     <classes>
-      <class name="com.framework.tests.GmailSentMailPageTest">
+      <class name="com.framework.tests.GmailInboxPageTest">
+        <methods>
+          <include name="testPrimaryMailFolder"/>
+          <include name="testSocialEmailFolder"/>
+          <include name="testPromotionsEmailFolder"/>
+          <include name="testTotalNoOfEmail"/>
+          <include name="testGmailInbox"/>
+          <include name="testNoOfEmailPerPage"/>
+        </methods>
+      </class> <!-- com.framework.tests.GmailInboxPageTest -->
+      <class name="com.framework.tests.EmailComposePageTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testSentMailPage"/>
-          <include name="testTotalNoOfEmail"/>
-          <include name="testSentMailLink"/>
         </methods>
-      </class> <!-- com.framework.tests.GmailSentMailPageTest -->
+      </class> <!-- com.framework.tests.EmailComposePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Nopackage1(failed) -->
+  <test name="Nopackage2(failed)">
+    <classes>
+      <class name="com.framework.tests.EmailViewPageTest">
+        <methods>
+          <include name="testDeleteEmail"/>
+          <include name="testOpeningRandomEmail"/>
+          <include name="testGmailInbox"/>
+          <include name="testEmailReply"/>
+        </methods>
+      </class> <!-- com.framework.tests.EmailViewPageTest -->
+      <class name="com.framework.tests.EmailComposePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.framework.tests.EmailComposePageTest -->
+    </classes>
+  </test> <!-- Nopackage2(failed) -->
+  <test name="Nopackage3(failed)">
+    <classes>
+      <class name="com.framework.tests.EmailComposePageTest">
+        <methods>
+          <include name="testNewEmailComposeLink"/>
+          <include name="testGmailInbox"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testSendNewMail"/>
+        </methods>
+      </class> <!-- com.framework.tests.EmailComposePageTest -->
+    </classes>
+  </test> <!-- Nopackage3(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

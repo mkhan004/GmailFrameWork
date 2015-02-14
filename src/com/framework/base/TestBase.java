@@ -40,7 +40,7 @@ public class TestBase {
 	protected GmailPageSideBar gmailPageSideBar;
 	
 	
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	public void setUp() throws MalformedURLException {
 		if (browser.equalsIgnoreCase("Safari")) {
 			driver = new SafariDriver();
@@ -73,7 +73,7 @@ public class TestBase {
 		gmailPageSideBar = PageFactory.initElements(driver, GmailPageSideBar.class);
 	}
 	// comment
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void tearDown(){
 		gmailPageHeader.gmailSignOut();
 		driver.quit();

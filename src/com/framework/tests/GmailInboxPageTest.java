@@ -12,6 +12,7 @@ public class GmailInboxPageTest extends TestBase{
 	
 	@Test
 	public void testGmailInbox(){
+		gmailPageHeader.gmailSignOut();
 		gmailPageHeader.signInLink.click();
 		gmailSignInPage.gmailSignIn("nyseekers@gmail.com", "01818365827");
 		gmailPageHeader.gmailLink.click();
@@ -45,7 +46,7 @@ public class GmailInboxPageTest extends TestBase{
 		Assert.assertEquals(noOfEmailOnCurrentPage, totalEmailCountOnCurrentPage);
 	}
 	
-	@Test(dependsOnMethods = "testGmailInbox")
+	@Test(dependsOnMethods = "testGmailInbox", groups = "b")
 	@AfterGroups(dependsOnGroups = "a")
 	public void testTotalNoOfEmail(){
 		int totalEmail = gmailInboxPage.convertStringToInteger(gmailInboxPage.totalEmailCount.getText());
