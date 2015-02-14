@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+
+	<test name="Nopackage1">
+		<classes>
+			<class name="com.framework.tests.GmailInboxPageTest">
+			</class>
+
+		</classes>
+	</test>
+	
+	<test name="Nopackage2">
+		<classes>
+			<class name="com.framework.tests.EmailViewPageTest">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Nopackage3">
+		<classes>
+			<class name="com.framework.tests.EmailComposePageTest">
+			</class>
+		</classes>
+	</test>
+	
+</suite>
